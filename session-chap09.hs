@@ -41,6 +41,7 @@ instance Yesod App where
 instance RenderMessage App FormMessage where
   renderMessage _ _ = defaultFormMessage
 
+
 main :: IO ()
 main = warp 3000 App
 
